@@ -4,23 +4,33 @@ import Aux from '../Auxiliary/Auxiliary';
 
 const withErrorHandler = (WrappedComponent, axios) => (props) => {
   const [error, setError] = useState(null);
+  const [resInterceptor, setResInterceptor] = useState(null);
+  const [reqInterceptor, setReqInterceptor] = useState(null);
 
-  const reqInterceptor = axios.interceptors.request.use((req) => {
-    setError(null);
-    return req;
-  });
+  useEffect(() => {
+    setResInterceptor(
+      axios.interceptors.response.use(
+        (res) => res,
+        (err) => {
+          setError(err);
+        }
+      )
+    );
+    setReqInterceptor(
+      axios.interceptors.request.use((req) => {
+        setError(null);
+        return req;
+      })
+    );
+  }, []);
 
-  const resInterceptor = axios.interceptors.response.use(
-    (res) => res,
-    (err) => {
-      setError(err);
-    }
-  );
-
-  useEffect(() => () => {
+  useEffect(
+    () => () => {
       axios.interceptors.request.eject(reqInterceptor);
-      axios.interceptors.esponse.eject(resInterceptor);
-  }, [reqInterceptor, resInterceptor]);
+      axios.interceptors.response.eject(resInterceptor);
+    },
+    [reqInterceptor, resInterceptor]
+  );
 
   const errorConfirmedHandler = () => {
     setError(null);
@@ -37,5 +47,3 @@ const withErrorHandler = (WrappedComponent, axios) => (props) => {
 };
 
 export default withErrorHandler;
-
-// nie dziala error jak sie kliknie continue i cos jest zkaszanione
