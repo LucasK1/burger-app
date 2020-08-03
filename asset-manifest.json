@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/burger-app/static/css/main.39596798.chunk.css",
+    "main.js": "/burger-app/static/js/main.c891681c.chunk.js",
+    "main.js.map": "/burger-app/static/js/main.c891681c.chunk.js.map",
+    "runtime-main.js": "/burger-app/static/js/runtime-main.cf4b5a1d.js",
+    "runtime-main.js.map": "/burger-app/static/js/runtime-main.cf4b5a1d.js.map",
+    "static/js/2.267223dc.chunk.js": "/burger-app/static/js/2.267223dc.chunk.js",
+    "static/js/2.267223dc.chunk.js.map": "/burger-app/static/js/2.267223dc.chunk.js.map",
+    "static/css/3.db6547de.chunk.css": "/burger-app/static/css/3.db6547de.chunk.css",
+    "static/js/3.7afe0e23.chunk.js": "/burger-app/static/js/3.7afe0e23.chunk.js",
+    "static/js/3.7afe0e23.chunk.js.map": "/burger-app/static/js/3.7afe0e23.chunk.js.map",
+    "static/css/4.665b7c16.chunk.css": "/burger-app/static/css/4.665b7c16.chunk.css",
+    "static/js/4.db81e336.chunk.js": "/burger-app/static/js/4.db81e336.chunk.js",
+    "static/js/4.db81e336.chunk.js.map": "/burger-app/static/js/4.db81e336.chunk.js.map",
+    "static/css/5.9ab23c5d.chunk.css": "/burger-app/static/css/5.9ab23c5d.chunk.css",
+    "static/js/5.7864a6cd.chunk.js": "/burger-app/static/js/5.7864a6cd.chunk.js",
+    "static/js/5.7864a6cd.chunk.js.map": "/burger-app/static/js/5.7864a6cd.chunk.js.map",
+    "index.html": "/burger-app/index.html",
+    "precache-manifest.1796db12da27d89ec09537f675ffc552.js": "/burger-app/precache-manifest.1796db12da27d89ec09537f675ffc552.js",
+    "service-worker.js": "/burger-app/service-worker.js",
+    "static/css/3.db6547de.chunk.css.map": "/burger-app/static/css/3.db6547de.chunk.css.map",
+    "static/css/4.665b7c16.chunk.css.map": "/burger-app/static/css/4.665b7c16.chunk.css.map",
+    "static/css/5.9ab23c5d.chunk.css.map": "/burger-app/static/css/5.9ab23c5d.chunk.css.map",
+    "static/css/main.39596798.chunk.css.map": "/burger-app/static/css/main.39596798.chunk.css.map",
+    "static/js/2.267223dc.chunk.js.LICENSE.txt": "/burger-app/static/js/2.267223dc.chunk.js.LICENSE.txt",
+    "static/media/original.png": "/burger-app/static/media/original.b8503d26.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf4b5a1d.js",
+    "static/js/2.267223dc.chunk.js",
+    "static/css/main.39596798.chunk.css",
+    "static/js/main.c891681c.chunk.js"
+  ]
+}
