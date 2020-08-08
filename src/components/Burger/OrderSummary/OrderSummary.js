@@ -3,7 +3,7 @@ import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import Button from '../../UI/Button/Button';
 import PropTypes from 'prop-types';
 
-const orderSummary = (props) => {
+const OrderSummary = (props) => {
   const ingredientSummary = Object.keys(props.ingredients).map((igKey) => {
     return (
       <li key={igKey}>
@@ -32,10 +32,10 @@ const orderSummary = (props) => {
   );
 };
 
-orderSummary.propTypes = {
+OrderSummary.propTypes = {
   price: PropTypes.number.isRequired,
   purchaseCancelled: PropTypes.func.isRequired,
   purchaseContinued: PropTypes.func.isRequired,
 };
 
-export default orderSummary;
+export default OrderSummary;
